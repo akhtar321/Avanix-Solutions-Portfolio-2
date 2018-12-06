@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+*{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    outline: none !important;
+}
+
+img{
+    max-width: 100%;
+}
+
+.portfolioSection{
+    padding: 100px 0px 50px;
+    background-color: #000;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+
+.portfolioSection .rounded-circle{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.portfolioSection h1{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 100px;
+}
+
+.portfolioSection h1 strong{
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.portfolioSection h1 a{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+    -moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.avanixBoxes{
+    margin: 0px 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.avanixBoxes li{
+    display: inline-block;
+    padding: 10px;
+    width: 24.8%;
+    overflow: hidden;
+}
+
+.avanixBoxes .avanixItem{
+    overflow: hidden;
+    position: relative;
+}
+
+.avanixBoxes .avanixItem:after{
+    opacity: 0;
+    content: "";
+    background: rgba(0, 0, 0, 0.336);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.avanixBoxes li:hover .avanixItem:after{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.avanixBoxes .avanixItem figcaption{
+    position: absolute;
+    z-index: 999;
+    bottom: -200px;
+    left: 0px;
+    width: 100%;
+    padding: 20px;
+    background: #FF25BFCC;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.avanixBoxes li:hover figcaption{
+    bottom: 0px;
+}
+
+.avanixItem figcaption h4{
+    color: #FFF;
+    margin: 0 0 10px;
+}
+
+.avanixItem figcaption p{
+    color: #FFF;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.avanixItem figcaption a{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    float: right;
+    margin-top: 12px;
+}
+
+.avanixBoxes li:first-child{
+    width: 50%;
+    float: left;
+}
+
+.avanixBoxes li:first-child .avanixItem{
+    width: 535px;
+    height: 534px;
+}
+
+.avanixBoxes li img{
+    height: 100%;
+}
+
+.avanixBoxes li:last-child{
+    width: 50%;
+}
+
+.avanixBoxes li img{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.avanixBoxes li:hover img{
+    transform: scale(1.1);
+}
